@@ -104,7 +104,26 @@ git branch -d pictures
 //若删除的分支没有合并使用
 git branch -D pictures
 ```
+## 配置git proxy
+```
+设置http、https代理
 
+git config --global http.proxy socks5://127.0.0.1:1080
+
+git config --global https.proxy socks5://127.0.0.1:1080
+
+查看http、https代理配置情况
+
+git config --global --get http.proxy
+
+git config --global --get https.proxy
+
+取消http、https代理配置
+
+git config --global --unset http.proxy
+
+git config --global --unset https.proxy
+```
 ## 建立 github 仓库
 
 登录 github 官网，新建仓库，将新建仓库的 http 或 ssh 地址添加到本地的 remote
