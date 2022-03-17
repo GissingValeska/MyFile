@@ -43,7 +43,7 @@ git config --global user.name "GissValeska"
 git config --global user.email "邮箱地址"
 //添加全局下的邮箱
 
-git config list
+git config --list
 //产看用户配置
 
 ## 提交
@@ -134,9 +134,11 @@ git config --global --unset https.proxy
 ```
 //查看有没有保存要提交的地址
 git remote -v
+// delete old remote
+git remote remove "name"
 //添加当前文件要保存的网上地址
 git remote add origin 新建仓库复制下来的http地址
-//开始上传到网上
+//为推送当前分支并建立与远程上游的跟踪，
 git push --set-upstream origin 分支名
 //输入用户名密码
 //如果想让git记住你的用户名和密码
