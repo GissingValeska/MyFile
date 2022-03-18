@@ -104,7 +104,9 @@ git branch -d pictures
 //若删除的分支没有合并使用
 git branch -D pictures
 ```
-## 配置git proxy
+
+## 配置 git proxy
+
 ```
 设置http、https代理
 
@@ -124,6 +126,7 @@ git config --global --unset http.proxy
 
 git config --global --unset https.proxy
 ```
+
 ## 建立 github 仓库
 
 登录 github 官网，新建仓库，将新建仓库的 http 或 ssh 地址添加到本地的 remote
@@ -145,3 +148,7 @@ git push --set-upstream origin 分支名
 git config credential.helper store
 //再git push 一下，就不需要密码了
 ```
+
+## 无法提交
+
+git push -u origin +master
