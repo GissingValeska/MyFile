@@ -9,6 +9,7 @@
 # === 通用
 # === 
 sudo pacman -S figlet cowsay ranger neovim feh zsh ntfs-3g firefox chromium ark p7zip unrar unarchiver lzop lrzip gwenview w3m git wget gcc make neofetch curl screenkey simplescreenrecorder variety markdown vlc rofi flameshot youtube-dl
+sudo pacman -S pandoc
 # === 
 # === neovim
 # === 配置粘贴xclip || xsel
